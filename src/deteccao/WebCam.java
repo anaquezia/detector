@@ -91,7 +91,7 @@ public class WebCam extends javax.swing.JFrame {
     
     public void mostraVideo(){
         Mat video = new Mat();
-        VideoCapture captura = new VideoCapture(0);
+        VideoCapture captura = new VideoCapture(1);
         if (captura.isOpened()){
             while(true){
                 captura.read(video);
